@@ -10,7 +10,7 @@ const Minicards = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get("http://localhost:3200/");
-                console.log(response.data.categories);
+                // console.log(response.data.categories);
                 setData(response.data);
                 setIsLoading(false);
             } catch (error) {
