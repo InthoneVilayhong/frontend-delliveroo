@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// ***********************HEADER *************************//
+.nav {
+    border-bottom: 1px solid #e8ebeb;
+    padding: 10px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 2px red solid; */
+}
+
+.logo-deliveroo {
+    width: 160px;
+}
+.top-card {
+    h1 {
+        font-size: 32px;
+        line-height: 26.7px;
+        color: #2e3333;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+    p {
+        font-size: 19px;
+        line-height: 28.8px;
+        color: #868a8a;
+        margin-right: 55px;
+    }
+    img {
+        width: 350px;
+        margin: 30px 0;
+        border-radius: 10px;
+    }
+}
+.top-card {
+    // border: red solid 1px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+//************************** MAIN ********************//
+main {
+    border-top: 0.1px solid rgba(128, 128, 128, 0);
+    margin-top: 25px;
+    background-color: #f2f5f5;
+}
+.show-all-cards {
+    // border: 2px red solid;
+    width: 820px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.meal-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    // border: orange 2px solid;
+}
+
+.meal-card {
+    .minicard:nth-child(odd) {
+        margin-right: 20px;
+    }
+}
+
+.minicard {
+    // border: green solid 2px;
+    width: 400px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.right-minicard {
+    img {
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+}
+
+.left-minicard {
+    p {
+        // border: gold 1px solid;
+        height: 40px;
+        overflow-y: hidden;
+        color: #808484;
+        line-height: 20.8px;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 15.6px;
+        margin-bottom: 1rem;
+    }
+    span {
+        font-size: 17px;
+        line-height: 14.7px;
+        color: #808484;
+    }
+    span {
+        margin: 0px 0.4rem;
+    }
+    .famous {
+        color: #ff8001;
+        font-size: 12px;
+        line-height: 10.7px;
+        font-weight: bold;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+    }
+}

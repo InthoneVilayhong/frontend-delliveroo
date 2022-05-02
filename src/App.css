@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  border-bottom: 1px solid #e8ebeb;
+  padding: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 2px red solid; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-deliveroo {
+  width: 160px;
+}
+
+.top-card h1 {
+  font-size: 32px;
+  line-height: 26.7px;
+  color: #2e3333;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.top-card p {
+  font-size: 19px;
+  line-height: 28.8px;
+  color: #868a8a;
+  margin-right: 55px;
+}
+
+.top-card img {
+  width: 350px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.top-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  border-top: 0.1px solid rgba(128, 128, 128, 0);
+  margin-top: 25px;
+  background-color: #f2f5f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show-all-cards {
+  width: 820px;
 }
+
+h2 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.meal-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.meal-card .minicard:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.minicard {
+  width: 400px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.right-minicard img {
+  height: 130px;
+  width: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.left-minicard p {
+  height: 40px;
+  overflow-y: hidden;
+  color: #808484;
+  line-height: 20.8px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.left-minicard h3 {
+  font-size: 18px;
+  line-height: 15.6px;
+  margin-bottom: 1rem;
+}
+
+.left-minicard span {
+  font-size: 17px;
+  line-height: 14.7px;
+  color: #808484;
+}
+
+.left-minicard span {
+  margin: 0px 0.4rem;
+}
+
+.left-minicard .famous {
+  color: #ff8001;
+  font-size: 12px;
+  line-height: 10.7px;
+  font-weight: bold;
+}
+
+.left-minicard .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=App.css.map */
