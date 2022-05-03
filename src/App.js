@@ -27,7 +27,19 @@ function App() {
             </header>
             <main>
                 <div className="container">
-                    <Minicards />
+                    <div className="bloc-main">
+                        <div>
+                            <Minicards />
+                        </div>
+                        <div>
+                            <div className="validate-container">
+                                <button className="validate">
+                                    Valider mon panier
+                                </button>
+                                <span>Votre panier est vide</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
