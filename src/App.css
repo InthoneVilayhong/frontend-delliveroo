@@ -93,6 +93,16 @@ h2 {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.minicard:hover {
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 12px 11px 8px #e0dede;
+          box-shadow: 12px 11px 8px #e0dede;
 }
 
 .right-minicard img {
