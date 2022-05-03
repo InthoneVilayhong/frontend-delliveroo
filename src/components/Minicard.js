@@ -26,42 +26,46 @@ const Minicards = () => {
         <div className="show-all-cards">
             {data.categories.map((minicard, index) => {
                 return (
-                    <div key={index} className="container-meal-card">
-                        <h2>{minicard.name}</h2>
-                        <div className="meal-card">
-                            {minicard.meals.map((meal) => {
-                                return (
-                                    <div key={meal.id} className="minicard">
-                                        <div className="left-minicard">
-                                            <h3>{meal.title}</h3>
-                                            {meal.description && (
-                                                <p>{meal.description}</p>
-                                            )}
-                                            <div className="price">
-                                                <span>{meal.price} €</span>
-                                                {meal.popular && (
-                                                    <span className="famous">
-                                                        <FontAwesomeIcon icon="fa-solid fa-star" />
+                    minicard.meals.length !== 0 && (
+                        <div key={index} className="container-meal-card">
+                            <h2>{minicard.name}</h2>
+                            <div className="meal-card">
+                                {minicard.meals.map((meal) => {
+                                    return (
+                                        <div key={meal.id} className="minicard">
+                                            <div className="left-minicard">
+                                                <h3>{meal.title}</h3>
+                                                {meal.description && (
+                                                    <p>{meal.description}</p>
+                                                )}
+                                                <div className="price">
+                                                    <div className="euro">
+                                                        {meal.price} €
+                                                    </div>
+                                                    {meal.popular && (
                                                         <span className="famous">
-                                                            Populaire
+                                                            <FontAwesomeIcon icon="fa-solid fa-star" />
+                                                            <span className="famous">
+                                                                Populaire
+                                                            </span>
                                                         </span>
-                                                    </span>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <div className="right-minicard">
+                                                {meal.picture && (
+                                                    <img
+                                                        src={meal.picture}
+                                                        alt="meal"
+                                                    />
                                                 )}
                                             </div>
                                         </div>
-                                        <div className="right-minicard">
-                                            {meal.picture && (
-                                                <img
-                                                    src={meal.picture}
-                                                    alt="meal"
-                                                />
-                                            )}
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
+                            </div>
                         </div>
-                    </div>
+                    )
                 );
             })}
         </div>
